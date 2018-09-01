@@ -8,8 +8,8 @@
     <script src="./build/bundle.js"></script>
 </head>
 <body>
-    Hello      
-    <div ng-controller="MainController as ctrl">
+      <welcome-component></welcome-component>
+      <div ng-controller="MainController as ctrl">
         <p>{{ctrl.title}}</p>
         <input ng-model="myInput" />
         <p>{{ctrl.myInput}}</p>
@@ -22,7 +22,6 @@
                 <p>Hello there</p>
             </div>
       </div>
-      <test></test>
 
 </body>
 </html>
