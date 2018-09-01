@@ -1,0 +1,12 @@
+<ul>
+    <li ng-repeat="topic in $ctrl.topics($ctrl.meetingId)">
+        <div>
+                <h2><a href="{{topic.link}}" target="_blank">{{topic.display_name}}</a></h2>
+                <p><em>{{topic.source}}</em></p>
+                <p>{{topic.description}}</p>
+                <div>
+                    <img ng-src="{{topic.type}}" alt="">
+                </div>
+        </div>
+    </li>
+</ul>
