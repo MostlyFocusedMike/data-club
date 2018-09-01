@@ -1,0 +1,6 @@
+<p>{{$ctrl.test}}</p>
+<div ng-repeat="meeting in $ctrl.meetings">
+    <h1>meeting number: #{{$index + 1}}!</h1>
+    <h3>{{meeting.date | date:'EEEE, MMM d' }}</h3>
+    <p ng-if='!meeting.confirmed'>(not confirmed)</p>
+</div>
