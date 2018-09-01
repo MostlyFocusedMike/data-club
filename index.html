@@ -1,13 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html ng-app="app" lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <script src="./build/bundle.js"></script>
 </head>
 <body>
-    Hello
-    <script src="./build/bundle.js"></script>
+    Hello      
+    <div ng-controller="MainController as ctrl">
+        <p>{{ctrl.title}}</p>
+        <input ng-model="myInput" />
+        <p>{{ctrl.myInput}}</p>
+
+        <input type="checkbox" ng-model="ctrl.checkVal">
+
+        <button ng-click="ctrl.getCheckVal()">Check the check</button>
+
+        <div ng-if="ctrl.checkVal">
+                <p>Hello there</p>
+            </div>
+      </div>
+
 </body>
 </html>
