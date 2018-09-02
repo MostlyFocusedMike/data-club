@@ -10,9 +10,10 @@ module.exports = {
     },
     mode: 'production',
     module: {
-        rules : [{
-            test: /\.css?$/,
-            use: ['style-loader', 'css-loader'],
+        rules : [
+        {
+            test:/\.(s*)css$/,
+            use:['style-loader','css-loader', 'sass-loader']
         },
         {
             test: /\.html?$/,
@@ -22,7 +23,8 @@ module.exports = {
     },
     resolve: {
         alias: {
-            MainStyle: path.resolve(__dirname, 'src/styles/main_style.css')
+            MainStyle: path.resolve(__dirname, 'src/styles/main_style.css'),
+            MainSass: path.resolve(__dirname, 'src/styles/main_style.scss'),
         }
     }
 }

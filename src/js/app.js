@@ -1,4 +1,5 @@
 import 'MainStyle'
+import 'MainSass'
 import angular from 'angular'
 import mainController from './controllers/MainController'
 import welcomeCmpt from './components/welcome';
