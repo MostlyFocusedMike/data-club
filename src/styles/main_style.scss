@@ -1,6 +1,50 @@
+$default-gray: #747474;
+$light-gray: #CCC;
 body {
-    background: #9bfffa;
+    background: #EBF2FF;
+    font-family: 'Helvetica neue', sans-serif;
 }
 img {
     height: 20px;
+}
+.meeting {
+    width: 80%;
+    margin: 1rem auto;
+    padding: 1rem;
+    background: #FFF;
+    box-shadow: .5rem .5rem 1rem rgba(0,0,0,.15);
+    border-radius: .25rem;
+    .meeting-info {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        margin: 0 auto;
+        width: 95%;
+        justify-content: space-between;
+        h1 {
+            margin: 0;
+            color: $default-gray;
+            font-weight: 400;
+        }
+        h3 {
+            margin: 0;
+            font-weight: 400;
+            text-align: right;
+            color: $default-gray;
+            &.tbd {
+                color: $light-gray;
+                &::after {
+                    content: ' (maybe)';
+                } 
+            }
+        }
+
+    }
+    hr {
+        width: 98%;
+        margin: .5rem auto;
+        color: $default-gray;
+    }
+
+
 }

@@ -8,21 +8,7 @@
     <script src="./build/bundle.js"></script>
 </head>
 <body>
-      <welcome></welcome>
-      <meetings></meetings>
-      <div ng-controller="MainController as ctrl">
-        <p>{{ctrl.title}}</p>
-        <input ng-model="myInput" />
-        <p>{{ctrl.myInput}}</p>
-
-        <input type="checkbox" ng-model="ctrl.checkVal">
-
-        <button ng-click="ctrl.getCheckVal()">Check the check</button>
-
-        <div ng-if="ctrl.checkVal">
-                <p>Hello there</p>
-            </div>
-      </div>
-
+    <welcome></welcome>
+    <meetings></meetings>
 </body>
 </html>

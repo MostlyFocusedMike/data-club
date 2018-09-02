@@ -1,9 +1,9 @@
-<p>{{$ctrl.test}}</p>
-<div ng-repeat="meeting in $ctrl.meetings">
-    <h1>Meeting #{{$index + 1}}!</h1>
+<div ng-repeat="meeting in $ctrl.meetings" class="meeting">
+    <div class="meeting-info">
+        <h1>Meeting #{{$index + 1}}</h1>
+        <h3 ng-class="{tbd: !meeting.confirmed}">{{meeting.date | date:'EEEE, MMM d' }}</h3>
+    </div>
     <hr />
-    <h3>{{meeting.date | date:'EEEE, MMM d' }}</h3>
-    <p ng-if='!meeting.confirmed'>(not confirmed)</p>
     <ul>
         <topics meeting-id='meeting.id'></topics>
     </ul>
