@@ -4,7 +4,7 @@ const topics = [
     {
         id: 1,
         meeting_id: 1,
-        display_name: 'Introduction to R: Intro To Basics',
+        display_name: 'Introduction to R: The Basics',
         source: CONSTANTS.DATA_CAMP,
         link: 'https://campus.datacamp.com/courses/free-introduction-to-r/chapter-1-intro-to-basics-1?ex=1',
         description: 'An intro to the foundations of the R language',

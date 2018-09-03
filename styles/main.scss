@@ -89,23 +89,11 @@ body {
     padding: 0;
     @extend .flex;
     justify-content: center;
-    .topic-info {
-        width: 80%;
-        p {
-            text-align: center;
-            color: $default-gray;
-            font-style: italic;
-            font-size: 1.25rem;
-        }
-        button {
-            @extend .default-button;
-            width: 10rem;
-        }
-    }
     .topic-summary {
         list-style: none;
         padding: 0;
         color: $default-gray;
+        margin: 1rem 0 .5rem;
         @extend .flex;
         justify-content: center;
         li {
@@ -124,6 +112,22 @@ body {
             }
         }
     }
+
+    .topic-info {
+        width: 80%;
+        p {
+            margin: 0;
+            text-align: center;
+            color: $default-gray;
+            font-style: italic;
+            font-size: 1.25rem;
+        }
+        button {
+            @extend .default-button;
+            width: 10rem;
+        }
+    }
+
     .topic {
         width: 340px;
         margin: 1rem;
@@ -157,7 +161,6 @@ body {
             img {
                 display: block;
                 margin-left: .5rem;
-                background: white;
                 height: 2rem;
                 width: 2rem;
                 position: relative;
