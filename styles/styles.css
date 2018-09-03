@@ -88,7 +88,7 @@ body {
     .topics .topic-summary li:last-child::after {
       content: "  "; }
   .topics .topic-info {
-    width: 80%; }
+    width: 90%; }
     .topics .topic-info p {
       margin: 0;
       text-align: center;
