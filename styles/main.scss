@@ -1,4 +1,4 @@
-$default-gray: #747474;
+$default-gray: #555;
 $light-gray: #CCC;
 $default-purple: #5B54EF;
 $light-purple: rgb(187, 183, 255);
@@ -89,6 +89,41 @@ body {
     padding: 0;
     @extend .flex;
     justify-content: center;
+    .topic-info {
+        width: 80%;
+        p {
+            text-align: center;
+            color: $default-gray;
+            font-style: italic;
+            font-size: 1.25rem;
+        }
+        button {
+            @extend .default-button;
+            width: 10rem;
+        }
+    }
+    .topic-summary {
+        list-style: none;
+        padding: 0;
+        color: $default-gray;
+        @extend .flex;
+        justify-content: center;
+        li {
+            display: inline;
+            &::after {
+                content: "  |  ";
+            }
+            margin: .1rem;
+            span {
+                white-space: pre
+            }
+        }
+        li:last-child {
+            &::after {
+                content: "  ";
+            }
+        }
+    }
     .topic {
         width: 340px;
         margin: 1rem;

@@ -1,6 +1,16 @@
 <div class="topics">
-    <p>total = {{$ctrl.totalHours($ctrl.meetingId)}}</p>
-    <button ng-click="$ctrl.hideTopics()">{{$ctrl.btnText}}</button>
+    <div class="topic-info" ng-if="$ctrl.topics($ctrl.meetingId).length > 0">
+        <p>This meeting covers about {{$ctrl.totalHours($ctrl.meetingId)}} hours of material</p>
+        <button ng-click="$ctrl.hideTopics()">{{$ctrl.btnText}}</button>
+    </div>
+    <div class="topic-info" ng-if="$ctrl.topics($ctrl.meetingId).length === 0">
+        <p>There are no topics of discussion assigned to this meeting yet</p>
+    </div>
+    <ul class="topic-summary" ng-if="!$ctrl.topicsVisible" >
+        <li ng-repeat="topic in $ctrl.topics($ctrl.meetingId)">
+            <span>{{topic.display_name}}</span>
+        </li>  
+    </ul>
     <div class="topic" ng-if="$ctrl.topicsVisible" ng-repeat="topic in $ctrl.topics($ctrl.meetingId)">
         <div class="topic-bar flex">
             <img ng-src="{{topic.type.link}}" alt="{{topic.type.name}}-icon">

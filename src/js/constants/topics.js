@@ -41,6 +41,16 @@ const topics = [
         duration: 11,
         type: CONSTANTS.VIDEO,
     },
+    {
+        id: 4,
+        meeting_id: 2,
+        display_name: 'Mathematical Thinking',
+        source: CONSTANTS.CC_STATISTICS,
+        link: 'https://www.youtube.com/watch?v=tN9Xl1AcSv8&list=PL8dPuuaLjXtNM_Y-bUAhblSAdWRnmBUcr&index=3',
+        description: 'How to think about statistics using math',
+        duration: 11,
+        type: CONSTANTS.VIDEO,
+    },
 ]
 
 export default topics;

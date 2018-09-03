@@ -12,12 +12,11 @@ const topicsCtrl = function() {
         return parseInt(total) + parseInt(obj.duration);
     }
     this.totalHours = function(meetingId) {
-        return  this.topics(meetingId).reduce(this.getSum, 0) / 60;
+        return (this.topics(meetingId).reduce(this.getSum, 0) / 60).toFixed(1);
     }
     this.hideTopics = function() {
         this.topicsVisible = !this.topicsVisible;
-        this.btnText = this.topicsVisible ? SHOW : HIDE; 
-        console.log(this.topicsVisible)
+        this.btnText = this.topicsVisible ? HIDE : SHOW; 
     }
 }
 
