@@ -1,10 +1,37 @@
-<li ng-repeat="topic in $ctrl.topics($ctrl.meetingId)">
-    <div>
-            <h2><a href="{{topic.link}}" target="_blank">{{topic.display_name}}</a></h2>
-            <p><em>{{topic.source}}</em></p>
-            <p>{{topic.description}}</p>
+<div class="topics">
+    <div class="topic" ng-repeat="topic in $ctrl.topics($ctrl.meetingId)">
+        <div class="topic-bar flex">
+            <img ng-src="{{topic.type.link}}" alt="{{topic.type.name}}-icon">
             <div>
-                <img ng-src="{{topic.type}}" alt="">
-            </div>
+                <a href="{{topic.link}}" target="_blank">{{topic.display_name}}</a>
+            </div> 
+        </div>
+        <table>
+            <tr>
+                <td>
+                    source:
+                </td>
+                <td>
+                    <em>{{topic.source}}</em>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Description:
+                </td>
+                <td>
+                    {{topic.description}}
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Duration:
+                </td>
+                <td>
+                    {{topic.duration}}
+                </td>
+            </tr>
+        </table>
+        <a href="{{topic.link}}" target="_blank" class="default-button">{{topic.type.text}}</a>
     </div>
-</li>
+</div>

@@ -1,0 +1,116 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: auto; }
+
+body {
+  background: #EBF2FF;
+  font-family: 'Helvetica neue', sans-serif; }
+
+.flex, .topics {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0 auto; }
+
+.default-button {
+  background: #5B54EF;
+  color: white;
+  border: none;
+  padding: .3rem .7rem;
+  margin: 1rem auto .5rem;
+  display: block;
+  width: 40%;
+  text-align: center;
+  transition: all 150ms;
+  font-size: 1.25rem;
+  text-decoration: none; }
+  .default-button:hover {
+    background: #bbb7ff;
+    color: #000; }
+  .default-button:active {
+    background: #6EB0E8; }
+
+.meeting {
+  width: 50rem;
+  margin: 1rem auto;
+  padding: 1rem;
+  background: #FFF;
+  box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  border-radius: .25rem; }
+  @media only screen and (max-width: 51rem) {
+    .meeting {
+      width: 100%;
+      margin: 1rem 0;
+      padding: 1rem 0; } }
+  .meeting .meeting-info {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0 auto;
+    width: 95%;
+    justify-content: space-between; }
+    .meeting .meeting-info h1 {
+      margin: 0;
+      color: #747474;
+      font-weight: 400; }
+    .meeting .meeting-info h3 {
+      margin: 0;
+      font-weight: 400;
+      text-align: right;
+      color: #747474; }
+      .meeting .meeting-info h3.tbd {
+        color: #CCC; }
+        .meeting .meeting-info h3.tbd::after {
+          content: ' (maybe)'; }
+  .meeting hr {
+    width: 98%;
+    margin: .5rem auto;
+    color: #747474; }
+
+.topics {
+  list-style: none;
+  padding: 0;
+  justify-content: center; }
+  .topics .topic {
+    width: 340px;
+    margin: 1rem;
+    background: #FFF;
+    padding-bottom: .5rem;
+    box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.15);
+    transition: all 250ms;
+    border-radius: .25rem; }
+    .topics .topic:hover {
+      box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.25); }
+    .topics .topic .topic-bar {
+      background: #5B54EF;
+      height: 4rem;
+      margin-bottom: 1rem;
+      width: 100%;
+      border-radius: .25rem .25rem 0 0;
+      position: relative; }
+      .topics .topic .topic-bar div {
+        margin: .5rem;
+        width: 80%; }
+        .topics .topic .topic-bar div a {
+          font-weight: 400;
+          font-size: 1.25rem;
+          color: #FFF;
+          display: block;
+          text-decoration: none; }
+      .topics .topic .topic-bar img {
+        display: block;
+        margin-left: .5rem;
+        background: white;
+        height: 2rem;
+        width: 2rem;
+        position: relative; }
+    .topics .topic table {
+      margin: 1rem; }
+      .topics .topic table td {
+        border-bottom: 1px solid #ddd;
+        margin: 1rem;
+        padding: .5rem;
+        vertical-align: top; }
+
+/*# sourceMappingURL=styles.css.map */
