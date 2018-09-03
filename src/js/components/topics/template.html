@@ -1,5 +1,7 @@
 <div class="topics">
-    <div class="topic" ng-repeat="topic in $ctrl.topics($ctrl.meetingId)">
+    <p>total = {{$ctrl.totalHours($ctrl.meetingId)}}</p>
+    <button ng-click="$ctrl.hideTopics()">{{$ctrl.btnText}}</button>
+    <div class="topic" ng-if="$ctrl.topicsVisible" ng-repeat="topic in $ctrl.topics($ctrl.meetingId)">
         <div class="topic-bar flex">
             <img ng-src="{{topic.type.link}}" alt="{{topic.type.name}}-icon">
             <div>
@@ -28,7 +30,7 @@
                     Duration:
                 </td>
                 <td>
-                    {{topic.duration}}
+                    {{topic.duration}} minutes
                 </td>
             </tr>
         </table>
