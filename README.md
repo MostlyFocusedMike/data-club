@@ -1,5 +1,8 @@
 # Data Club
-A site that stores our curriculum and schedule in one place. 
+A site that stores our curriculum and schedule in one place.
+
+
+https://mostlyfocusedmike.github.io/data-club/
 
 ## What's Data Club? 
 Some of the Access Labs graduates decided that we wanted to dip our toes in the data science pool. 
