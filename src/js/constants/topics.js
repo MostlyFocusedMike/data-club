@@ -64,7 +64,7 @@ const topics = [
     {
         id: 7,
         meeting_id: 2,
-        display_name: 'Mean, Median, and Mode: Measures of Central Tendency',
+        display_name: 'Measures of Central Tendency',
         source: CONSTANTS.CC_STATISTICS,
         link: 'https://www.youtube.com/watch?v=kn83BA7cRNM&list=PL8dPuuaLjXtNM_Y-bUAhblSAdWRnmBUcr&index=4',
         description: 'What the mean, the median, and mode actually mean',

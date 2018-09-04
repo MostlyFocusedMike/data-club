@@ -35,6 +35,31 @@ html {
   .default-button:active, .topics .topic-info button:active {
     background: #6EB0E8; }
 
+#welcome {
+  width: 100%;
+  max-width: 60rem;
+  background: rgba(255, 255, 255, 0.85);
+  margin: 1rem auto;
+  padding: .5rem 0 .25rem;
+  border-radius: .2rem; }
+  #welcome h1 {
+    width: 90%;
+    margin: 0 auto;
+    font-size: 3rem;
+    color: black;
+    text-align: center; }
+  #welcome p {
+    color: black;
+    text-align: center;
+    display: block;
+    margin: 1rem auto;
+    width: 90%;
+    max-width: 30rem;
+    font-size: 1.5rem; }
+  #welcome hr {
+    width: 80%;
+    color: #CCC; }
+
 .meeting {
   width: 50rem;
   margin: 1rem auto;
