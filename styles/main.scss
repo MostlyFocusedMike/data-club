@@ -231,12 +231,13 @@ html {
         }
 
     }
-    p {
+    #notes-info {
         text-align: center;
         font-size: 1.25rem;
         color: black;
     }
     .notes {
+        text-align: left;
         background: white;
         display: block;
         height: 50rem;
