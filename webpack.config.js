@@ -20,12 +20,24 @@ module.exports = {
             test: /\.html?$/,
             use: ['html-loader'],
         },
+        {
+            test: /\.md$/,
+            use: [
+                {
+                    loader: "html-loader"
+                },
+                {
+                    loader: "markdown-loader",
+                }
+            ]
+        }
         ]
     },
     resolve: {
         alias: {
             MainStyle: path.resolve(__dirname, 'src/styles/main_style.css'),
             MainSass: path.resolve(__dirname, 'src/styles/main_style.scss'),
+            Notes: path.resolve(__dirname, 'src/js/notes'),
         }
     }
 }

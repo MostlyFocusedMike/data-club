@@ -212,3 +212,39 @@ html {
         }
     }
 }
+
+#notes-section {
+    background: rgba(255,255,255,.85); 
+    border-radius: .2rem;
+    width: 100%;
+    max-width: 50rem;
+    margin: 1rem auto;
+    #notes-bar {
+        background: $default-purple;
+        color: white;
+        border-radius: .2rem .2rem 0 0;
+        width: 100%;
+        padding: 1rem 0 1rem;
+        h1 {
+            display: block;
+            margin: 0 1rem;
+        }
+
+    }
+    p {
+        text-align: center;
+        font-size: 1.25rem;
+        color: black;
+    }
+    .notes {
+        background: white;
+        display: block;
+        height: 50rem;
+        overflow-x: auto;
+        width: 100%;
+        max-width: 30rem;
+        padding: 1rem;
+        margin: 1rem auto;
+    }
+    
+}

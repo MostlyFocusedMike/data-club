@@ -6,7 +6,7 @@
     </ul>
     <div class="topic-info" ng-if="$ctrl.topics($ctrl.meetingId).length > 0">
         <p>This meeting covers about {{$ctrl.totalHours($ctrl.meetingId)}} hours of material</p>
-        <button ng-click="$ctrl.hideTopics()">{{$ctrl.btnText}}</button>
+        <button ng-click="$ctrl.toggleTopics()">{{$ctrl.btnText}}</button>
     </div>
     <div class="topic-info" ng-if="$ctrl.topics($ctrl.meetingId).length === 0">
         <p>There are no topics of discussion assigned to this meeting yet</p>
@@ -47,6 +47,4 @@
         </table>
         <a href="{{topic.link}}" target="_blank" class="default-button">{{topic.type.text}}</a>
     </div>
-    <div ng-bind-html="$ctrl.test"></div>
-    {{$ctrl.test}}
 </div>

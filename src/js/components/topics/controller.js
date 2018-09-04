@@ -1,11 +1,10 @@
 import topics from '../../constants/topics'
-import {test} from '../../notes/notes'
+
 const SHOW = "Show Topics";
 const HIDE = "Hide Topics";
 
 const topicsCtrl = function() {
     this.btnText = SHOW;
-    this.test = test;
     this.topicsVisible = false;
     this.topics = (meetingId) => {
         return topics.filter(topic => topic.meeting_id === meetingId)
@@ -16,7 +15,7 @@ const topicsCtrl = function() {
     this.totalHours = function(meetingId) {
         return (this.topics(meetingId).reduce(this.getSum, 0) / 60).toFixed(1);
     }
-    this.hideTopics = function() {
+    this.toggleTopics = function() {
         this.topicsVisible = !this.topicsVisible;
         this.btnText = this.topicsVisible ? HIDE : SHOW; 
     }

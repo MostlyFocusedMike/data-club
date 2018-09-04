@@ -166,4 +166,33 @@ html {
         padding: .5rem;
         vertical-align: top; }
 
+#notes-section {
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: .2rem;
+  width: 100%;
+  max-width: 50rem;
+  margin: 1rem auto; }
+  #notes-section #notes-bar {
+    background: #5B54EF;
+    color: white;
+    border-radius: .2rem .2rem 0 0;
+    width: 100%;
+    padding: 1rem 0 1rem; }
+    #notes-section #notes-bar h1 {
+      display: block;
+      margin: 0 1rem; }
+  #notes-section p {
+    text-align: center;
+    font-size: 1.25rem;
+    color: black; }
+  #notes-section .notes {
+    background: white;
+    display: block;
+    height: 50rem;
+    overflow-x: auto;
+    width: 100%;
+    max-width: 30rem;
+    padding: 1rem;
+    margin: 1rem auto; }
+
 /*# sourceMappingURL=styles.css.map */
