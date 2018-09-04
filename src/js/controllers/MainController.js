@@ -1,5 +1,4 @@
 import app from '../app'
-console.log(app)
 const mainController = function($scope){
     this.title = "hello there"
     this.myInput = "wow ok then"
