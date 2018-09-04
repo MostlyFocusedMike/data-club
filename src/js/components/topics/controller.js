@@ -1,9 +1,11 @@
 import topics from '../../constants/topics'
+import {test} from '../../notes/notes'
 const SHOW = "Show Topics";
 const HIDE = "Hide Topics";
 
 const topicsCtrl = function() {
     this.btnText = SHOW;
+    this.test = test;
     this.topicsVisible = false;
     this.topics = (meetingId) => {
         return topics.filter(topic => topic.meeting_id === meetingId)
