@@ -1,11 +1,15 @@
 html, body {
   margin: 0;
   padding: 0;
-  overflow-x: auto; }
-
-body {
-  background: #EBF2FF;
+  overflow-x: auto;
   font-family: 'Helvetica neue', sans-serif; }
+
+html {
+  background: url(../images/charts.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
 
 .flex, .topics, .topics .topic-summary {
   display: flex;
