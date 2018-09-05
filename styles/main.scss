@@ -246,6 +246,15 @@ html {
         max-width: 30rem;
         padding: 1rem;
         margin: 1rem auto;
+        hr {
+            height: .25rem;
+            width: 90%;
+            background: $default-purple;
+        }
+        h4 {
+            color: $default-purple;
+            font-style: italic;
+        }
     }
     
 }

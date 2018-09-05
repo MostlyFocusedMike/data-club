@@ -107,7 +107,6 @@ Here are all the basic operations carried out in R:
 of the thing right next to it, this is useful for wrapped collections
 
 -------------------
--------------------
 
 # Vectors
 
@@ -140,7 +139,7 @@ of the thing right next to it, this is useful for wrapped collections
 ## Naming a vector
 - the obvious parallel to vectors are arrays (which are different things in R) 
 - however, in addition to having indexes, vectors can also have names 
-- do this using the name() function
+- do this using the names() function
 - the name function can take a named variable or literal vector 
 
 #### code ------------------------
