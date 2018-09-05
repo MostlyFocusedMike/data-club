@@ -107,6 +107,7 @@ Here are all the basic operations carried out in R:
 of the thing right next to it, this is useful for wrapped collections
 
 -------------------
+-------------------
 
 # Vectors
 
@@ -136,7 +137,7 @@ of the thing right next to it, this is useful for wrapped collections
 #### ------------------------ code
 
 
-# Naming a vector
+## Naming a vector
 - the obvious parallel to vectors are arrays (which are different things in R) 
 - however, in addition to having indexes, vectors can also have names 
 - do this using the name() function
@@ -265,4 +266,42 @@ of the thing right next to it, this is useful for wrapped collections
 
 # Selection by comparison
 - you can also use comparison operators to filter out vectors
-  -the comparisons are <, >, <=, >=, == 
+  - the comparisons are <, >, <=, >=, == 
+
+#### code ------------------------
+
+>\>\> c(4, 5, 6) > 5
+
+>[1] FALSE FALSE TRUE
+
+
+#### ------------------------ code
+
+
+- this selection vector returns a vector of logical operators 
+- use this new logical vector to select only elements that came 
+back true: 
+
+#### code ------------------------
+>\>\> v_1 <- c(4, 5, 6)
+
+>\>\> selects <- v_1 > 5
+
+>\>\> final_v <- v_1[selects]
+
+>\>\> final_v
+
+> [1] 6
+
+> \# this can be streamlined a bit as well
+
+>\>\> final_v <- v_1[v_1 > 5]
+
+>\>\> final_v
+
+> [1] 6
+
+#### ------------------------ code
+
+
+-------------------------------------
