@@ -384,6 +384,11 @@ Return of the Jedi &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 309.306 &nbsp; 165.8          
 </div> 
 </div>
 
+## Combining matrices 
+- usinger rbind() and cbind(), you can add two matrices together
+- use rbind() to keep the column number the same, but stack the rows 
+- use cbind() to keep row numbers the same, but column numbers increase 
+- if you have two 2X2 matrices: 
 
 - cbind: 
 
