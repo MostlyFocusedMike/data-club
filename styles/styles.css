@@ -191,8 +191,8 @@ html {
     display: block;
     height: 50rem;
     overflow-x: auto;
-    width: 100%;
-    max-width: 30rem;
+    width: 90%;
+    max-width: 40rem;
     padding: 1rem;
     margin: 1rem auto; }
     #notes-section .notes hr {
@@ -202,5 +202,15 @@ html {
     #notes-section .notes h4 {
       color: #5B54EF;
       font-style: italic; }
+    #notes-section .notes .overflow {
+      width: 95%;
+      overflow: scroll;
+      margin: 0 auto;
+      background: #DDD; }
+      #notes-section .notes .overflow .console {
+        padding: 1rem;
+        display: inline-block;
+        color: #000;
+        width: 40rem; }
 
 /*# sourceMappingURL=styles.css.map */

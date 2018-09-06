@@ -242,8 +242,8 @@ html {
         display: block;
         height: 50rem;
         overflow-x: auto;
-        width: 100%;
-        max-width: 30rem;
+        width: 90%;
+        max-width: 40rem;
         padding: 1rem;
         margin: 1rem auto;
         hr {
@@ -254,6 +254,18 @@ html {
         h4 {
             color: $default-purple;
             font-style: italic;
+        }
+        .overflow {
+            width: 95%;
+            overflow: scroll;
+            margin: 0 auto;
+            background: #DDD;
+            .console {
+                padding: 1rem;
+                display: inline-block;
+                color: #000;
+                width: 40rem;
+            }
         }
     }
     
