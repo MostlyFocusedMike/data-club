@@ -7,9 +7,9 @@ const meetings = [
     },
     {
         id: 2,
-        date: new Date('2018/09/11'),
+        date: new Date('2018/09/12'),
         order: 2,
-        confirmed: false,
+        confirmed: true,
     },
     {
         id: 3,

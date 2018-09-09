@@ -259,12 +259,13 @@ html {
             width: 95%;
             overflow: scroll;
             margin: 0 auto;
-            background: #DDD;
+            background: #EEE;
+            padding: 1rem;
+            position: relative;
             .console {
-                padding: 1rem;
                 display: inline-block;
                 color: #000;
-                width: 40rem;
+                width: 38rem;
             }
         }
     }

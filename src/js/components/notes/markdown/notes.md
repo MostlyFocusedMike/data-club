@@ -304,9 +304,6 @@ back true:
 
 
 -------------------------------------
-
-
-
 # Matrices
 
 ## What are they?
@@ -315,9 +312,15 @@ back true:
 - they are arranged into a fixed number of rows and columns
 - you create them with the matrix() function 
 
+</ul>
+ <br/>
+<div class='overflow'>
+<div class="console">
 <code>
 >> matrix(1:9, byrow = TRUE, nrow = 3)
 </code>
+</div> 
+</div>
 
 
 - The first argument is the collection of elements that R will arrange into the rows and columns of the matrix.
@@ -331,6 +334,10 @@ back true:
 - you can also use the shorthand dimnames() function
  - it takes a list, first with the row names, then the columns 
 
+</ul>
+ <br/>
+<div class='overflow'>
+<div class="console">
 <code>
 # Box office Star Wars (in millions!)<br />
 >> new_hope <- c(460.998, 314.4)<br />
@@ -357,12 +364,13 @@ Return of the Jedi     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 309.306  165.8
 \>\> star_wars_matrix <- matrix(box_office, nrow = 3, byrow = TRUE,<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dimnames = list(titles, region))
 
 </code>
+</div> 
+</div>
 
 ## Adding colums and rows 
  - use cbind() to add columns and rbind() to add rows
- - it's the same with either function, but the matrix first, then the vectors 
- - heres how to add a column: 
- </ul>
+
+</ul>
  <br/>
 <div class='overflow'>
 <div class="console">
@@ -390,12 +398,12 @@ Return of the Jedi &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 309.306 &nbsp; 165.8          
 - use cbind() to keep row numbers the same, but column numbers increase 
 - if you have two 2X2 matrices: 
 
-- cbind: 
+cbind: 
 
 XX XX<br/>
 XX XX
 
-- rbind: 
+rbind: 
 
 XX<br/>
 XX<br/>
@@ -403,6 +411,7 @@ XX<br/>
 XX<br/>
 
 ## Summing a matrix 
+
 - use colSum() to get a vector of the sum of each columns,
 - use rowSum() to get a vector of the sum of each row
 - here's an example of colSum()
@@ -413,8 +422,8 @@ XX<br/>
 <div class="console">
 <code>
 # Total revenue for US and non-US<br/>
->> total_revenue_vector <- colSums(all_wars_matrix)<br /><br/>
->> total_revenue_vector<br />
+>>total_revenue_vector <- colSums(all_wars_matrix)<br /><br/>
+>>total_revenue_vector<br />
 &nbsp;&nbsp;&nbsp;&nbsp;US non-US<br /> 
 2226.3 2087.8
 
@@ -422,4 +431,60 @@ XX<br/>
 </div> 
 </div>
 
+- sum() will sum all elements in a matrix 
+- rowMeans()/colMeans() will return a vector of the averages of each row/col
 
+
+
+## Selection of matrix elements
+- live vectors, use [ ] to select elements inside matrixes 
+ - it goes [row, column]
+- you can select elements, rows, or sub-matrixes out of a matrix 
+ - returning an element is just that element, 
+ - returning a row or column is a vector
+ - returning a matrix is...another matrix 
+
+</ul>
+ <br/>
+<div class='overflow'>
+<div class="console">
+<code>
+
+\# select single cell, first row, second column<br />
+\>> my_matrix[1,2]
+
+\# select entire third row<br /> 
+\>> my_matrix[3,]
+
+\# select entire second column<br /> 
+\>> my_matrix[,2]<br />
+\# notice the comma is required in both cases
+
+\# use ranges to create sub matrixes<br />
+\# this will make one of the elements in the first three rows and columns 2-4<br />
+\>> my_matrix[1:3,2:4]<br />
+\>> my_matrix[c(1,2,3),my_vector] # this also works<br />
+
+</code>
+</div> 
+</div>
+
+## Matrix arithmetic 
+- it's the same as vectors, just do the operation, and it will apply to all the 
+  elements in the matrix 
+- you can do multiple matrixes if they have the same number of elements 
+
+</ul>
+ <br/>
+<div class='overflow'>
+<div class="console">
+<code>
+# add 4 to each element in the matrix and storing them in a new matrix<br /> 
+>> add_matrix <- 4 + matrix 
+
+\# multiply each element in each matrix and store them in a new matrix <br />
+\>> multiplication_matrix <- matrix_1 * matrix_2
+
+</code>
+</div> 
+</div>

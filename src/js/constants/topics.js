@@ -8,7 +8,7 @@ const topics = [
         source: CONSTANTS.DATA_CAMP,
         link: 'https://campus.datacamp.com/courses/free-introduction-to-r/chapter-1-intro-to-basics-1?ex=1',
         description: 'An intro to the foundations of the R language',
-        duration: 60,
+        duration: 25,
         type: CONSTANTS.INTERACTIVE,
     },
     {
@@ -18,7 +18,7 @@ const topics = [
         source: CONSTANTS.DATA_CAMP,
         link: 'https://campus.datacamp.com/courses/free-introduction-to-r/chapter-2-vectors-2?ex=1',
         description: 'Learn how to use Vectors to quickly manipulate data',
-        duration: 60,
+        duration: 25,
         type: CONSTANTS.INTERACTIVE,
     },
     {
@@ -48,7 +48,7 @@ const topics = [
         source: CONSTANTS.DATA_CAMP,
         link: 'https://campus.datacamp.com/courses/free-introduction-to-r/chapter-3-matrices-3?ex=1',
         description: 'Understand how to manipulate matrices with R',
-        duration: 60,
+        duration: 25,
         type: CONSTANTS.INTERACTIVE,
     },
     {
@@ -58,7 +58,7 @@ const topics = [
         source: CONSTANTS.DATA_CAMP,
         link: 'https://campus.datacamp.com/courses/free-introduction-to-r/chapter-4-factors-4?ex=1',
         description: 'In R, categorical data is stored in factors, here\'s how they work',
-        duration: 60,
+        duration: 25,
         type: CONSTANTS.INTERACTIVE,
     },
     {
