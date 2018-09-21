@@ -1,5 +1,3 @@
-# Matrices
-
 ## What are they?
 - In R, a matrix is a collection of elements of the same data type 
   - numeric, character, or logical

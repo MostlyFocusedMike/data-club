@@ -1,5 +1,3 @@
-# Vectors
-
 ## What are vectors?
 - Vectors are one-dimension arrays that can hold numeric data, character data, or logical data.
 - build them using the combine function, c() 

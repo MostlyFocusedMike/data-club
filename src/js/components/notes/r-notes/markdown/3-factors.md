@@ -1,5 +1,3 @@
-# Factors 
-
 ## What are they? 
 - Factors are data types that are used to store *categorical variables*
    - categorical variables are limited to a specific number of categories, 
