@@ -1,20 +1,29 @@
-import introToR from './markdown/r-notes/1-intro-to-r.md'
-import vectors from './markdown/r-notes/2-vectors.md'
-import matrices from './markdown/r-notes/3-matrices.md'
-import factors from './markdown/r-notes/4-factors.md'
+import rNotes from './markdown/r-notes'
+import marked from 'marked'
 
-  
-  const rNotes = 
-    introToR +
-    vectors +
-    matrices +
-    factors 
-  
-  
-  const notesCtrl = function($sce) {
+ 
+ const myNotes = marked(`
+ # I am a notes 
+ ## I am sub header 
+ [I am link](https://www.statmethods.net/interface/workspace.html) 
+ `)
+
+ const noteHolder = `
+ <div id="test">
+${myNotes}
+</div>
+
+ `
+
+class notesCtrl{
+  constructor($sce) {
     // we need to use $sce because if we don't, angular will filter out .md
     // auto generated header ids, which would make navigation impossible
-    this.notes = $sce.trustAsHtml(rNotes);
+    this.text = $sce.trustAsHtml(rNotes.text);
+    this.notes = rNotes
+    this.tableOfContents = rNotes.tableOfContents;
+    this.test = $sce.trustAsHtml(noteHolder);
   }
+}
 
 export default notesCtrl;

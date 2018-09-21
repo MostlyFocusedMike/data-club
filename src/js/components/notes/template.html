@@ -2,8 +2,13 @@
   <div id="notes-bar">
     <h1>Notes </h1>
   </div>
-  <p id="notes-info">Click a button to see the notes that go with that source</p>
-  <button class="default-button">Data Camp: Intro to R</button>
-  <a href="#factors">factors</a>
-  <div ng-bind-html="$ctrl.notes" class="notes"></div><br><br>
+  <div id="notes-contents">
+      <div class="contents">
+        <h4>Table of Conetents</h4>
+        <div ng-bind-html="$ctrl.tableOfContents"></div>
+      </div>
+      <div ng-bind-html="$ctrl.test"></div>
+      <div ng-bind-html="$ctrl.text" class="notes-text"></div>
+  </div>
+  <br><br>
 </div>

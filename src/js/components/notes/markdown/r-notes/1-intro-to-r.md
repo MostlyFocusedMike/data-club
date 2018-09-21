@@ -1,4 +1,4 @@
-# Intro to R: The Basics 
+# Intro to R
 
 ## How R deals with arithmetic 
 Here are all the basic operations carried out in R:

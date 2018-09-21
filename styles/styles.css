@@ -11,7 +11,7 @@ html {
   -o-background-size: cover;
   background-size: cover; }
 
-.flex, .topics, .topics .topic-summary {
+.flex, .topics, .topics .topic-summary, #notes-section #notes-contents {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -170,7 +170,7 @@ html {
   background: rgba(255, 255, 255, 0.85);
   border-radius: .2rem;
   width: 100%;
-  max-width: 50rem;
+  max-width: 80rem;
   margin: 1rem auto; }
   #notes-section #notes-bar {
     background: #5B54EF;
@@ -185,33 +185,57 @@ html {
     text-align: center;
     font-size: 1.25rem;
     color: black; }
-  #notes-section .notes {
-    text-align: left;
-    background: white;
-    display: block;
-    height: 50rem;
-    overflow-x: auto;
-    width: 90%;
-    max-width: 40rem;
-    padding: 1rem;
-    margin: 1rem auto; }
-    #notes-section .notes hr {
-      height: .25rem;
-      width: 90%;
-      background: #5B54EF; }
-    #notes-section .notes h4 {
-      color: #5B54EF;
-      font-style: italic; }
-    #notes-section .notes .overflow {
-      width: 95%;
-      overflow: scroll;
-      margin: 0 auto;
-      background: #EEE;
-      padding: 1rem;
-      position: relative; }
-      #notes-section .notes .overflow .console {
+  #notes-section #notes-contents {
+    justify-content: center; }
+    #notes-section #notes-contents .contents {
+      background: white;
+      width: 15rem;
+      margin: 1rem 4rem;
+      border-radius: .2rem; }
+      #notes-section #notes-contents .contents a {
         display: inline-block;
-        color: #000;
-        width: 38rem; }
+        width: 80%;
+        margin: .5rem 1rem;
+        /* unvisited link */
+        /* visited link */
+        /* mouse over link */
+        /* selected link */ }
+        #notes-section #notes-contents .contents a:link {
+          color: red; }
+        #notes-section #notes-contents .contents a:visited {
+          color: green; }
+        #notes-section #notes-contents .contents a:hover {
+          color: hotpink; }
+        #notes-section #notes-contents .contents a:active {
+          color: blue; }
+    #notes-section #notes-contents .notes-text {
+      text-align: left;
+      background: white;
+      display: block;
+      height: 50rem;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      width: 100%;
+      max-width: 40rem;
+      padding: 1rem;
+      margin: 1rem auto; }
+      #notes-section #notes-contents .notes-text hr {
+        height: .25rem;
+        width: 90%;
+        background: #5B54EF; }
+      #notes-section #notes-contents .notes-text h4 {
+        color: #5B54EF;
+        font-style: italic; }
+      #notes-section #notes-contents .notes-text .overflow {
+        width: 95%;
+        overflow: scroll;
+        margin: 0 auto;
+        background: #EEE;
+        padding: 1rem;
+        position: relative; }
+        #notes-section #notes-contents .notes-text .overflow .console {
+          display: inline-block;
+          color: #000;
+          width: 38rem; }
 
 /*# sourceMappingURL=styles.css.map */
